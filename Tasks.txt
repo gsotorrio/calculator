@@ -1,4 +1,4 @@
-10-09-2016
+Week 11-09-2016 to 18-09-2019
 ---------------------------------------------------------------------------------------
 1. Create a js file with the following functions:
 	a. Takes 2 numbers and return the addition
@@ -7,7 +7,7 @@
 	d. Takes 2 numbers and return the division
 
 
-17-09-2016
+Week 18-09-2016 to 25-09-2019
 ---------------------------------------------------------------------------------------
 2. Create User Interface
 	a. User interface based on HTML and CSS (no JS required)
