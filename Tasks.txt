@@ -1,0 +1,6 @@
+17-09-2016
+
+1. Create User Interface
+	a. User interface based on HTML and CSS (no JS required)
+	b. Interface will include add, subtract, multiply, equal, view results elements
+	c. Bootstrap can be used or any internet resources
