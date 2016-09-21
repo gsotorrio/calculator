@@ -1,8 +1,16 @@
 .table{
 	border: solid 2px black;
 	border-collapse: collapse;
+	width: 500px;
+	height: 500px;
 }
 
 .number{
 	border: solid 1px black;
+	font-size: 50px;
+}
+
+.display{
+	width: 500px;
+	height: 100px;
 }
