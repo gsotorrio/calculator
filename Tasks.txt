@@ -17,7 +17,9 @@ Week 18-09-2016 to 25-09-2019
 
 Week 25-09-2016 to 02-10-2016
 ---------------------------------------------------------------------------------------
+fix: change th to td
+
 3. Add clean all button
-4. When calculator is loaded it should display 0
+4. When calculator is loaded it should display 0 on the right
 5. Create funtionality to display numbers
 6. When user clicks any operation we remark the button clicked
