@@ -6,7 +6,7 @@ function displayNumber(itemClicked){
 }
 
 function changeColor(itemClicked){
-	itemClicked.style.backgroundColor = "#f34";
+	itemClicked.style.backgroundColor = "#00FF00";
 }
 
 
