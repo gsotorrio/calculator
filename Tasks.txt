@@ -23,3 +23,11 @@ fix: change th to td
 4. When calculator is loaded it should display 0 on the right
 5. Create funtionality to display numbers
 6. When user clicks any operation we remark the button clicked
+
+
+Week 02-10-2016 to 09-10-2016
+---------------------------------------------------------------------------------------
+7. Modify pointer when cursor is over any button 
+8. Delete initial zero when clicking any button numbers
+9. Reset calculator when clicking on C
+10. Save last number and operation in memory when any operation is clicked  
