@@ -1,4 +1,4 @@
-Week 11-09-2016 to 18-09-2019
+Week 11-09-2016 to 18-09-2019 DONE!!
 ---------------------------------------------------------------------------------------
 1. Create a js file with the following functions:
 	a. Takes 2 numbers and return the addition
@@ -7,7 +7,7 @@ Week 11-09-2016 to 18-09-2019
 	d. Takes 2 numbers and return the division
 
 
-Week 18-09-2016 to 25-09-2019
+Week 18-09-2016 to 25-09-2019 DONE!!
 ---------------------------------------------------------------------------------------
 2. Create User Interface
 	a. User interface based on HTML and CSS (no JS required)
@@ -15,7 +15,7 @@ Week 18-09-2016 to 25-09-2019
 	c. Bootstrap can be used or any internet resources
 
 
-Week 25-09-2016 to 02-10-2016
+Week 25-09-2016 to 02-10-2016 DONE!!
 ---------------------------------------------------------------------------------------
 fix: change th to td
 
@@ -25,7 +25,7 @@ fix: change th to td
 6. When user clicks any operation we remark the button clicked
 
 
-Week 02-10-2016 to 09-10-2016
+Week 15-10-2016 to 22-10-2016
 ---------------------------------------------------------------------------------------
 7. Modify pointer when cursor is over any button 
 8. Delete initial zero when clicking any button numbers
