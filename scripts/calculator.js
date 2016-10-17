@@ -22,5 +22,23 @@ function getDelete (itemClicked){
 	}
 }
 
+function operation (){
+	var number = 0;
+	
+	switch(){
+		case();
+		break;
+		
+		case ();
+		break;
+		
+		case ();
+		break;
+		
+		case ();
+		break;
+	}
+}
+
 
 
