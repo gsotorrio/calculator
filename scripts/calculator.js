@@ -22,20 +22,27 @@ function getDelete (itemClicked){
 	}
 }
 
-function operation (){
-	var number = 0;
+
+
+function operation (itemClicked){
+	var result = window.document.getElementById("result").value;
+	var number1 = 0;
 	
 	switch(){
-		case();
+		case "add";
+			result.innerText = number1 + result.innerText;
 		break;
 		
-		case ();
+		case "subtract";
+			result.innerText = number1 - result.innerText;
 		break;
 		
-		case ();
+		case "multiply";
+			result.innerText = number1 * result.innerText;
 		break;
 		
-		case ();
+		case "divide";
+			result.innerText = number1 / result.innerText;
 		break;
 	}
 }
