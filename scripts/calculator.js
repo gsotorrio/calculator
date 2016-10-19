@@ -25,23 +25,23 @@ function getDelete (itemClicked){
 
 
 function operation (itemClicked){
-	var result = window.document.getElementById("result").value;
+	var result = window.document.getElementById("result");
 	var number1 = 0;
 	
-	switch(){
-		case "add";
+	switch (number1) {
+		case "add":
 			result.innerText = number1 + result.innerText;
 		break;
 		
-		case "subtract";
+		case "subtract":
 			result.innerText = number1 - result.innerText;
 		break;
 		
-		case "multiply";
+		case "multiply":
 			result.innerText = number1 * result.innerText;
 		break;
 		
-		case "divide";
+		case "divide":
 			result.innerText = number1 / result.innerText;
 		break;
 	}
