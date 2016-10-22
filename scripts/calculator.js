@@ -28,6 +28,11 @@ function operation (itemClicked){
 	var result = window.document.getElementById("result");
 	var number1 = 0;
 	
+	if (operation.onclick){
+			window.document.getElementById("result") = number1;
+			result.innerText = "";
+	}
+	
 	switch (number1) {
 		case "add":
 			result.innerText = number1 + result.innerText;
@@ -48,4 +53,4 @@ function operation (itemClicked){
 }
 
 
-
+ 
