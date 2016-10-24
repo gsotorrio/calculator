@@ -26,12 +26,12 @@ var lastResult = 0;
 
 
 function operate (operation){
-	var currentNumber = window.document.getElementById("result").innerText;
+	var currentNumber = parseInt(window.document.getElementById("result").innerText);
 	
 	switch (operation) {
 		case "+":
 			lastResult = currentNumber + lastResult;
-			window.document.getElementById("result").innerText = lastResult; 
+			parseInt(window.document.getElementById("result").innerText) = lastResult; 
 		break;
 		
 		
