@@ -1,5 +1,8 @@
-function add (a,b){
-	return a+b;
+function add (){
+	var a = lastResult
+	var b = parseInt(window.document.getElementById("result").innerHTML);
+	
+	window.document.getElementById("result").innerHTML = a+b;
 }
 
 function subtract (a,b){
