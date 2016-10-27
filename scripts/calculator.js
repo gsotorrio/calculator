@@ -28,7 +28,7 @@ var lastResult = 0;
 function operate (operation){
 	var currentNumber = parseInt(window.document.getElementById("result").innerText);
 	
-	switch (operation) {
+	switch (operation){
 		case "+":
 			lastResult = currentNumber;
 			currentNumber = "";
