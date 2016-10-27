@@ -31,7 +31,9 @@ function operate (operation){
 	switch (operation){
 		case "+":
 			lastResult = currentNumber;
+			window.document.getElementById("result").innerHTML = "";
 			currentNumber = "";
+			window.document.getElementById("result").innerHTML = lastResult + currentNumber;
 		break;
 	}	
 }
