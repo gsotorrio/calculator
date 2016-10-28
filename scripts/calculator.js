@@ -23,15 +23,22 @@ function getDelete (){
 }
 
 var lastResult = 0;
-
+var numberPress = 0;
 
 function operate (operation){
 	var currentNumber = parseInt(window.document.getElementById("result").innerHTML);
+	numberPress++;
 	
 	switch (operation){
 		case "+":
+			if (numberPress <= 1){
 			lastResult = currentNumber;
 			window.document.getElementById("result").innerHTML = "";
+			}
+			else {
+				window.document.getElementById("result").innerHTML = "";
+				lastResult = lastResult + currentNumber;
+			}
 		break;
 	}	
 }
