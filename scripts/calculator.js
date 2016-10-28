@@ -7,6 +7,10 @@ function displayNumber(itemClicked){
 		result.innerText = "";
 	}
 	
+	if (numberPress >= 1){
+		result.innerText = "";
+	}
+	
 	result.innerText += itemClicked.innerText;	
 }
 
@@ -35,21 +39,17 @@ function operate (operation){
 		case "+":
 			if (numberPress <= 1){
 			lastResult = currentNumber;
-			window.document.getElementById("result").innerHTML = "";
 			}
-			else {
-				window.document.getElementById("result").innerHTML = "";
-				lastResult = lastResult + currentNumber;
+			else { 
+			lastResult = lastResult + currentNumber;
 			}
 		break;
 		
 		case "-":
 			if (numberPress <= 1){
 			lastResult = currentNumber;
-			window.document.getElementById("result").innerHTML = "";
 			}
 			else {
-				window.document.getElementById("result").innerHTML = "";
 				lastResult = lastResult - currentNumber;
 			}
 		break;
@@ -57,10 +57,8 @@ function operate (operation){
 		case "*":
 			if (numberPress <= 1){
 			lastResult = currentNumber;
-			window.document.getElementById("result").innerHTML = "";
 			}
 			else {
-				window.document.getElementById("result").innerHTML = "";
 				lastResult = lastResult * currentNumber;
 			}
 		break;
@@ -68,10 +66,8 @@ function operate (operation){
 		case "/":
 			if (numberPress <= 1){
 			lastResult = currentNumber;
-			window.document.getElementById("result").innerHTML = "";
 			}
 			else {
-				window.document.getElementById("result").innerHTML = "";
 				lastResult = lastResult / currentNumber;
 			}
 		break;

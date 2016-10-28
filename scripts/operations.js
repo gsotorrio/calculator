@@ -20,3 +20,29 @@ function giveTotalResult(){
 		break;
 	}
 }
+
+function giveParcialResult(){
+	var a = lastResult
+	var b = parseInt(window.document.getElementById("result").innerHTML);
+	
+	switch (lastOperation){
+		case ('+'):
+			if (numberPress <= 1){}
+			else {
+				LastResult = a+b;
+			}
+		break;	
+
+		case ('-'):
+			lastResult = a-b;
+		break;
+
+		case ('*'):
+			lastResult = a*b;
+		break;
+
+		case ('/'):
+			lastResult = a/b;
+		break;
+	}
+}
