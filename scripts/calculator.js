@@ -40,6 +40,39 @@ function operate (operation){
 				lastResult = lastResult + currentNumber;
 			}
 		break;
+		
+		case "-":
+			if (numberPress <= 1){
+			lastResult = currentNumber;
+			window.document.getElementById("result").innerHTML = "";
+			}
+			else {
+				window.document.getElementById("result").innerHTML = "";
+				lastResult = lastResult - currentNumber;
+			}
+		break;
+		
+		case "*":
+			if (numberPress <= 1){
+			lastResult = currentNumber;
+			window.document.getElementById("result").innerHTML = "";
+			}
+			else {
+				window.document.getElementById("result").innerHTML = "";
+				lastResult = lastResult * currentNumber;
+			}
+		break;
+		
+		case "/":
+			if (numberPress <= 1){
+			lastResult = currentNumber;
+			window.document.getElementById("result").innerHTML = "";
+			}
+			else {
+				window.document.getElementById("result").innerHTML = "";
+				lastResult = lastResult / currentNumber;
+			}
+		break;
 	}	
 }
 
