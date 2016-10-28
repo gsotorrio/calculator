@@ -24,10 +24,12 @@ function getDelete (){
 
 var lastResult = 0;
 var numberPress = 0;
+var lastOperation = "";
 
 function operate (operation){
 	var currentNumber = parseInt(window.document.getElementById("result").innerHTML);
 	numberPress++;
+	lastOperation = operation;
 	
 	switch (operation){
 		case "+":
