@@ -50,7 +50,7 @@ function operate (operation){
 	
 	switch (operation){
 		case "+":
-			lastResult = add(lastResult, currentNumber);
+			lastResult = add(currentNumber, lastResult);
 		break;
 	}
 
