@@ -46,6 +46,8 @@ function operate (operation){
 	
 	var currentNumber = parseInt(window.document.getElementById("result").innerHTML);
 
+	// Rest of operations (-, /, *, =)
+	
 	switch (operation){
 		case "+":
 			lastResult = add(lastResult, currentNumber);
