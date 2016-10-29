@@ -1,24 +1,39 @@
 "use strict";
 
+var lastResult = 0;
+var isOperating = false;
+
 function displayNumber(itemClicked){
-	var result = window.document.getElementById("result");
+	var display = window.document.getElementById("result");
 	
-	if (result.innerText == "0"){
-		result.innerText = "";
+	if(isOperating)
+	{
+		display.innerText = itemClicked.innerText;
+	}
+	else{
+		var result = display.innerText + itemClicked.innerText;
+	
+		if(result.indexOf(".") != -1){
+			display.innerText = result;
+		}
+		else{
+			display.innerText = parseInt(result);
+		}
 	}
 	
-	if (numberPress >= 1){
-		result.innerText = "";
-	}
-	
-	result.innerText += itemClicked.innerText;	
+	isOperating = false;
 }
 
 function changeColor(itemClicked){
+	
+	// Clean up the ALL buttons and make green the clicked item 
 	itemClicked.style.backgroundColor = "#00FF00";
 }
 
-function getDelete (){
+function reset (){
+	// Reset the UI
+	// and reset the calculator's stage (all global variables)
+	
 	var aux = window.document.getElementById("result");
 	
 	if (aux.innerText != 0){
@@ -26,52 +41,18 @@ function getDelete (){
 	}
 }
 
-var lastResult = 0;
-var numberPress = 0;
-var lastOperation = "";
-
 function operate (operation){
-	var currentNumber = parseInt(window.document.getElementById("result").innerHTML);
-	numberPress++;
-	lastOperation = operation;
+	isOperating = true;
 	
+	var currentNumber = parseInt(window.document.getElementById("result").innerHTML);
+
 	switch (operation){
 		case "+":
-			if (numberPress <= 1){
-			lastResult = currentNumber;
-			}
-			else { 
-			lastResult = lastResult + currentNumber;
-			}
+			lastResult = add(lastResult, currentNumber);
 		break;
-		
-		case "-":
-			if (numberPress <= 1){
-			lastResult = currentNumber;
-			}
-			else {
-				lastResult = lastResult - currentNumber;
-			}
-		break;
-		
-		case "*":
-			if (numberPress <= 1){
-			lastResult = currentNumber;
-			}
-			else {
-				lastResult = lastResult * currentNumber;
-			}
-		break;
-		
-		case "/":
-			if (numberPress <= 1){
-			lastResult = currentNumber;
-			}
-			else {
-				lastResult = lastResult / currentNumber;
-			}
-		break;
-	}	
+	}
+
+	window.document.getElementById("result").innerHTML = lastResult;
 }
 
 
