@@ -32,7 +32,7 @@ function changeColor(itemClicked){
 
 function reset (){
 	// Reset the UI
-	// and reset the calculator's stage (all global variables)
+	// and reset the calculator's state (all global variables)
 	
 	var aux = window.document.getElementById("result");
 	
@@ -51,6 +51,23 @@ function operate (operation){
 	switch (operation){
 		case "+":
 			lastResult = add(lastResult, currentNumber);
+		break;
+		
+		case "-":
+			if(lastResult == 0){
+				lastResult = currentNumber;
+			}
+			else{
+			    lastResult = subtract(lastResult, currentNumber);
+			}
+		break;
+		
+		case "*":
+			lastResult = multiply(lastResult, currentNumber);
+		break;
+		
+		case "*":
+			lastResult = divide(lastResult, currentNumber);
 		break;
 	}
 
