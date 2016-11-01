@@ -25,22 +25,33 @@ function displayNumber(itemClicked){
 }
 
 function changeColor(itemClicked){
-	
 	// Clean up the ALL buttons and make green the clicked item 
+	window.document.getElementById("op").style.backgroundColor = "#FFFFFF";
+	window.document.getElementById("op1").style.backgroundColor = "#FFFFFF";
+	window.document.getElementById("op2").style.backgroundColor = "#FFFFFF";
+	window.document.getElementById("op3").style.backgroundColor = "#FFFFFF";
+	window.document.getElementById("op4").style.backgroundColor = "#FFFFFF";
 	itemClicked.style.backgroundColor = "#00FF00";
 }
 
 function reset (){
 	// Reset the UI
 	// and reset the calculator's state (all global variables)
+	window.document.getElementById("op").style.backgroundColor = "#FFFFFF";
+	window.document.getElementById("op1").style.backgroundColor = "#FFFFFF";
+	window.document.getElementById("op2").style.backgroundColor = "#FFFFFF";
+	window.document.getElementById("op3").style.backgroundColor = "#FFFFFF";
+	window.document.getElementById("op4").style.backgroundColor = "#FFFFFF";
 	
 	var aux = window.document.getElementById("result");
 	
 	if (aux.innerText != 0){
 		aux.innerText = 0;
 	}
+	
 	lastResult = 0;
 	isOperating = false;
+	
 }
 
 function operate (operation){

@@ -19,7 +19,7 @@
 				<td onclick="displayNumber(this)" class="number">7</td>
 				<td onclick="displayNumber(this)" class="number">8</td>
 				<td onclick="displayNumber(this)" class="number">9</td>
-				<td onclick="changeColor(this); operate('+');" class="number">+</td>
+				<td onclick="changeColor(this); operate('+');" id="op" class="number">+</td>
 				<td onclick="reset();" class="number">C</td>	
 			</tr>
 			
@@ -27,21 +27,21 @@
 				<td onclick="displayNumber(this)" class="number">4</td>
 				<td onclick="displayNumber(this)" class="number">5</td>
 				<td onclick="displayNumber(this)" class="number">6</td>
-				<td onclick="changeColor(this); operate('-');" class="number">-</td>
-				<td onclick="changeColor(this); operate('=');" class="number" rowspan="3">=</td>
+				<td onclick="changeColor(this); operate('-');" id="op1" class="number">-</td>
+				<td onclick="changeColor(this); operate('=');" id="op2" class="number" rowspan="3">=</td>
 			</tr>
 			
 			<tr>
 				<td onclick="displayNumber(this)" class="number">1</td>
 				<td onclick="displayNumber(this)" class="number">2</td>
 				<td onclick="displayNumber(this)" class="number">3</td>
-				<td onclick="changeColor(this); operate('*');" class="number">*</td>
+				<td onclick="changeColor(this); operate('*');" id="op3" class="number">*</td>
 			</tr>
 			
 			<tr>
 				<td onclick="displayNumber(this)" class="number" colspan="2">0</td>
 				<td onclick="displayNumber(this)" class="number">.</td>
-				<td onclick="changeColor(this); operate('/');" class="number">/</td>
+				<td onclick="changeColor(this); operate('/');" id="op4" class="number">/</td>
 			</tr>
 		</table>
 		<script type="text/javascript" src="scripts\calculator.js"></script>
