@@ -56,20 +56,19 @@ function operate (operation){
 		break;
 		
 		case "-":
-			if(lastResult == 0){
-				lastResult = currentNumber;
-			}
-			else{
-			    lastResult = subtract(lastResult, currentNumber);
-			}
+			lastResult = subtract(lastResult, currentNumber);
 		break;
 		
 		case "*":
 			lastResult = multiply(lastResult, currentNumber);
 		break;
 		
-		case "*":
+		case "/":
 			lastResult = divide(lastResult, currentNumber);
+		break;
+		
+		case "=":
+			
 		break;
 	}
 
