@@ -39,6 +39,8 @@ function reset (){
 	if (aux.innerText != 0){
 		aux.innerText = 0;
 	}
+	lastResult = 0;
+	isOperating = false;
 }
 
 function operate (operation){
