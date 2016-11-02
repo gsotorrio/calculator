@@ -2,6 +2,7 @@
 
 var lastResult = 0;
 var isOperating = false;
+var lastOperation = "";
 
 function displayNumber(itemClicked){
 	var display = window.document.getElementById("result");
@@ -51,12 +52,11 @@ function reset (){
 	
 	lastResult = 0;
 	isOperating = false;
-	
 }
 
 function operate (operation){
 	isOperating = true;
-	
+	lastOperation = operation;
 	var currentNumber = parseInt(window.document.getElementById("result").innerHTML);
 
 	// Rest of operations (-, /, *, =)
@@ -77,14 +77,32 @@ function operate (operation){
 		case "/":
 			lastResult = divide(lastResult, currentNumber);
 		break;
-		
-		case "=":
-			
-		break;
 	}
 
 	window.document.getElementById("result").innerHTML = lastResult;
 }
 
+function giveTotalResult(){
+	var currentNumber = parseInt(window.document.getElementById("result").innerHTML);
+
+	switch (lastOperation){
+		case ('+'):
+			lastResult = add(lastResult, currentNumber);
+		break;	
+
+		case ('-'):
+			lastResult = subtract(lastResult, currentNumber);
+		break;
+
+		case ('*'):
+			lastResult = multiply(lastResult, currentNumber);
+		break;
+
+		case ('/'):
+			lastResult = divide(lastResult, currentNumber);
+		break;
+	}
+	window.document.getElementById("result").innerHTML = lastResult;	
+}
 
  
