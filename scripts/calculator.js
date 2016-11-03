@@ -52,6 +52,7 @@ function reset (){
 	
 	lastResult = 0;
 	isOperating = false;
+	lastOperation = "";
 }
 
 function operate (operation){
