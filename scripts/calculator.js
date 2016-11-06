@@ -59,7 +59,6 @@ function reset (){
 
 function operate (operation){
 	isOperating = true;
-	lastOperation = operation;
 	var currentNumber = parseInt(window.document.getElementById("result").innerHTML);
 
 	// Rest of operations (-, /, *, =)
@@ -67,45 +66,38 @@ function operate (operation){
 	switch (operation){
 		case "+":
 			lastResult = add(lastResult, currentNumber);
+			lastOperation = add;
 		break;
 		
 		case "-":
-			lastResult = subtract(lastResult, currentNumber);
+				if(lastResult == 0){
+					lastResult = subtract(currentNumber, lastResult);
+				}
+				else{
+					lastResult = subtract(lastResult, currentNumber);
+				}
+			
+			lastOperation = subtract;
 		break;
 		
 		case "*":
 			lastResult = multiply(lastResult, currentNumber);
+			lastOperation = multiply;
 		break;
 		
 		case "/":
 			lastResult = divide(lastResult, currentNumber);
+			lastOperation = divide;
+		break;
+		
+		case "=":
+			lastResult = lastOperation(lastResult, currentNumber);
 		break;
 	}
 
 	window.document.getElementById("result").innerHTML = lastResult;
 }
 
-function giveTotalResult(){
-	var currentNumber = parseInt(window.document.getElementById("result").innerHTML);
 
-	switch (lastOperation){
-		case ('+'):
-			lastResult = add(lastResult, currentNumber);
-		break;	
-
-		case ('-'):
-			lastResult = subtract(lastResult, currentNumber);
-		break;
-
-		case ('*'):
-			lastResult = multiply(lastResult, currentNumber);
-		break;
-
-		case ('/'):
-			lastResult = divide(lastResult, currentNumber);
-		break;
-	}
-	window.document.getElementById("result").innerHTML = lastResult;	
-}
 
  
