@@ -25,29 +25,31 @@ function displayNumber(itemClicked){
 	isOperating = false;
 }
 
+function changeColorOperationsButton(){
+	var arrayOperations = window.document.getElementsByClassName("colorOperations");
+	
+	for(var i = 0; i < arrayOperations.length; i++){
+		arrayOperations[i].style.backgroundColor = "#FFFFFF";
+	}
+}
+
+
 function changeColor(itemClicked){
 	// Clean up the ALL buttons and make green the clicked item 
-	window.document.getElementById("op").style.backgroundColor = "#FFFFFF";
-	window.document.getElementById("op1").style.backgroundColor = "#FFFFFF";
-	window.document.getElementById("op2").style.backgroundColor = "#FFFFFF";
-	window.document.getElementById("op3").style.backgroundColor = "#FFFFFF";
-	window.document.getElementById("op4").style.backgroundColor = "#FFFFFF";
+	changeColorOperationsButton();
+	
 	itemClicked.style.backgroundColor = "#00FF00";
 }
 
 function reset (){
 	// Reset the UI
 	// and reset the calculator's state (all global variables)
-	window.document.getElementById("op").style.backgroundColor = "#FFFFFF";
-	window.document.getElementById("op1").style.backgroundColor = "#FFFFFF";
-	window.document.getElementById("op2").style.backgroundColor = "#FFFFFF";
-	window.document.getElementById("op3").style.backgroundColor = "#FFFFFF";
-	window.document.getElementById("op4").style.backgroundColor = "#FFFFFF";
+	changeColorOperationsButton();
 	
-	var aux = window.document.getElementById("result");
+	var tdDisplay = window.document.getElementById("result");
 	
-	if (aux.innerText != 0){
-		aux.innerText = 0;
+	if (tdDisplay.innerText != 0){
+		tdDisplay.innerText = 0;
 	}
 	
 	lastResult = 0;
